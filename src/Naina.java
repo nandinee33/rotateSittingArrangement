@@ -26,6 +26,13 @@ public class Naina {
             }
         }
         int n = sc.nextInt();
+        for (int j = 0; j < n; j++) {
+            String ch = arr[arr.length - 1];
+            for (int k = arr.length - 2; k >= 0; k--) {
+                arr[k + 1] = arr[k];
+            }
+            arr[0] = ch;
+        }
 
 
     }
