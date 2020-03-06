@@ -8,8 +8,24 @@ public class Naina {
         int count = 0;
         int p = 0;
         for (int i = 0; i < str.length(); i++) {
-
-
+            if (str.charAt(i) == ' ') {
+                count++;
+            }
         }
+        String[] arr = new String[count + 1];
+        for (int m = 0; m < str.length(); m++) {
+            if (m == str.length() - 1) {
+                arr[p] = str2 + str.charAt(m);
+            }
+            if (str.charAt(m) == ' ') {
+                arr[p] = str2;
+                str2 = "";
+                p++;
+            } else {
+                str2 = str2 + str.charAt(m);
+            }
+        }
+
+
     }
 }
