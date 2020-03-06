@@ -33,7 +33,9 @@ public class Naina {
             }
             arr[0] = ch;
         }
-
+        for (String l : arr) {
+            System.out.print(l + " ");
+        }
 
     }
 }
