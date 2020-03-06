@@ -25,6 +25,7 @@ public class Naina {
                 str2 = str2 + str.charAt(m);
             }
         }
+        int n = sc.nextInt();
 
 
     }
